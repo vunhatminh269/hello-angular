@@ -1,0 +1,69 @@
+/* Định dạng cho phần header_top */
+.header_top {
+    background-color: #333; /* Màu nền */
+    color: #fff; /* Màu văn bản */
+    padding: 10px 0; /* Khoảng cách nội dung và mép */
+    display: flex; /* Hiển thị các phần tử con theo chiều ngang */
+    justify-content: space-between; /* Các phần tử con được căn giữa và căn cách nhau */
+    align-items: center; /* Căn chỉnh các phần tử con theo trục dọc */
+}
+
+.header-logo {
+    text-decoration: none; /* Loại bỏ gạch chân trên liên kết */
+    color: #fff; /* Màu văn bản */
+}
+
+/* Định dạng cho phần header_search */
+.header-search {
+    display: flex; /* Hiển thị các phần tử con theo chiều ngang */
+}
+
+.input-search {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Định dạng cho phần header_cart */
+.header_cart {
+    text-decoration: none; /* Loại bỏ gạch chân trên liên kết */
+    color: #fff; /* Màu văn bản */
+    display: flex; /* Hiển thị các phần tử con theo chiều ngang */
+    align-items: center; /* Căn chỉnh các phần tử con theo trục dọc */
+    margin-left: 10px; /* Khoảng cách giữa header_search và header_cart */
+}
+
+.box-cart {
+    display: flex; /* Hiển thị các phần tử con theo chiều ngang */
+    align-items: center; /* Căn chỉnh các phần tử con theo trục dọc */
+    margin-right: 5px; /* Khoảng cách giữa biểu tượng giỏ hàng và số lượng */
+}
+
+.icon-global-cart {
+    font-size: 20px; /* Kích thước biểu tượng giỏ hàng */
+    margin-right: 5px; /* Khoảng cách giữa biểu tượng giỏ hàng và số lượng */
+}
+
+.cart-number {
+    background-color: #ff0000; /* Màu nền của số lượng trong giỏ hàng */
+    color: #fff; /* Màu văn bản của số lượng trong giỏ hàng */
+    border-radius: 50%; /* Để làm hình tròn cho số lượng trong giỏ hàng */
+    padding: 5px; /* Khoảng cách bên trong số lượng */
+}
+
+/* Định dạng cho phần main-menu */
+.main-menu {
+    list-style: none; /* Loại bỏ dấu chấm trước mục trong danh sách */
+    display: flex; /* Hiển thị các mục theo chiều ngang */
+    padding: 0; /* Loại bỏ khoảng cách trong danh sách */
+}
+
+.main-menu li {
+    margin-right: 10px; /* Khoảng cách giữa các mục menu */
+}
+
+/* Định dạng cho các mục menu */
+.main-menu a {
+    text-decoration: none; /* Loại bỏ gạch chân trên liên kết */
+    color: #333; /* Màu văn bản */
+}
