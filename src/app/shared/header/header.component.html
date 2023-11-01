@@ -1,0 +1,86 @@
+<header>
+    <nav class="nav-bar">
+        <div class="header_top">
+            <a href="/" class="header-logo">
+                <i class="logo.png"></i>
+            </a>
+            <form action="/search" onsubmit="return suggestSearch(event);" class="header-search">
+                <input id="skw" type="text" class="input-search" onkeyup="suggestSearch(event);"
+                    placeholder="Bạn tìm gì..." name="key" autocomplete="off" maxlength="100">
+                <button type="submit">
+                    <i class="icon-search"></i>
+
+                </button>
+                <div id="search-result"></div>
+            </form>
+            <a href="/cart" class="header_cart menu-info">
+                <div class="box-cart">
+                    <i class="iconglobal-cart"></i>
+                    <span class="cart-number"></span>
+                </div>
+                <span>Giỏ Hàng</span>
+            </a>
+        </div>
+        <div class="header_main">
+            <ul class="main-menu">
+                <li class>
+                    <a href="/dtdd">
+                        <i>
+                            <img src=" ">
+                        </i>
+                        <span class> Điện Thoại</span>
+                    </a>
+                </li>
+                <li class>
+                    <a href="/laptop">
+                        <i>
+                            <img src=" ">
+                        </i>
+                        <span class> Laptop</span>
+                    </a>
+                </li>
+                <li class>
+                    <a href="/tablet">
+                        <i>
+                            <img src=" ">
+                        </i>
+                        <span class> Tablet</span>
+                    </a>
+                </li>
+                <li class>
+                    <a href="/dongho">
+                        <i>
+                            <img src=" ">
+                        </i>
+                        <span class> Đồng Hồ</span>
+                    </a>
+                </li>
+                <li class>
+                    <a href="/phukien">
+                        <i>
+                            <img src=" ">
+                        </i>
+                        <span class> Phụ Kiện</span>
+                    </a>
+                </li>
+                <li class>
+                    <a href="/maycu">
+                        <i>
+                            <img src=" ">
+                        </i>
+                        <span class>Máy cũ giá rẻ</span>
+                    </a>
+                </li>
+                <li class>
+                    <a href="/pc">
+                        <i>
+                            <img src=" ">
+                        </i>
+                        <span class> PC, Máy in</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
