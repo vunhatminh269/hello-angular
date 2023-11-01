@@ -1,38 +1,34 @@
-<!--Header-->
 
-<app-header></app-header>
 
-<!--END-->
-
-<!--Banner to-->
-<div class="big-banner">
-  <a aria-label="slide" href="/hot-product">
-    <img width="1920" height="450" src="/src/assets/images/Banner-big.webp" alt="Trang chủ">
-  </a>
-</div>
-<!--END-->
-
-<!--Slide các sản phẩm-->
-<div class="main-container">
-  <div class="bg-tophome">
-    <div class="home-slide" id="owl-home">
-      <div class="slide-banner home-top">
-        <div class="owl-carousel">
-          <div class="owl-item" *ngFor="let item of items">
-            <a aria-label="slide" [href]="item.link">
-              <img [src]="item.image" alt="{{ item.name }}">
-            </a>
+<section>
+  <!--Banner to-->
+  <div class="big-banner">
+    <a aria-label="slide" href="/hot-product">
+      <img width="1920" height="450" src="/src/assets/images/Banner-big.webp" alt="Trang chủ">
+    </a>
+  </div>
+  <!--END-->
+  <!--Slide các sản phẩm-->
+  <div class="main-container">
+    <div class="bg-tophome">
+      <div class="home-slide" id="owl-home">
+        <div class="slide-banner home-top">
+          <div class="owl-carousel">
+            <div class="owl-item" *ngFor="let item of items">
+              <a aria-label="slide" [href]="item.link">
+                <img [src]="item.image" alt="{{ item.name }}">
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!--END-->
+  <!--END-->
+  <!--Sản phẩm Sale-->
 
-<!--Sản phẩm Sale-->
+  <!--END-->
 
-<!--END-->
-
-<!--Sản phẩm mới-->
-<!--END-->
+  <!--Sản phẩm mới-->
+  <!--END-->
+</section>
