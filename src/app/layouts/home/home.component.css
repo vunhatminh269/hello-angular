@@ -1,0 +1,51 @@
+.big-banner {
+    text-align: center;
+  }
+  
+  .big-banner img {
+    max-width: 100%;
+  }
+  
+  /* Kiểu chung cho carousel container */
+.carousel {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Kiểu cho mỗi item trong carousel */
+  .carousel-item {
+    text-align: center; /* Căn giữa nội dung trong item */
+    padding: 20px; /* Khoảng cách giữa các item */
+  }
+  
+  .carousel-item img {
+    max-width: 100%; /* Đảm bảo ảnh không bị tràn khỏi item */
+  }
+  
+  /* Kiểu cho các điểm chỉ dẫn (dots) */
+  .carousel .slick-dots {
+    display: flex;
+    justify-content: center; /* Căn giữa các điểm chỉ dẫn */
+    list-style: none;
+    padding: 0;
+  }
+  
+  .carousel .slick-dots li {
+    margin: 0 5px; /* Khoảng cách giữa các điểm chỉ dẫn */
+  }
+  
+  .carousel .slick-dots li button {
+    background-color: #ccc; /* Màu nền cho điểm chỉ dẫn không được chọn */
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%; /* Để tạo hình tròn */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Hiệu ứng màu nền thay đổi */
+  }
+  
+  .carousel .slick-dots li.slick-active button {
+    background-color: #f00; /* Màu nền cho điểm chỉ dẫn được chọn */
+  }
+  

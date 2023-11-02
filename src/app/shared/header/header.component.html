@@ -2,13 +2,17 @@
     <nav class="nav-bar">
         <div class="header_top">
             <a href="/" class="header-logo">
-                <i class="logo.png"></i>
+                <i class="logo.png">
+                    <img src="/assets/images/fs-iconfire.webp" alt="icon">
+                </i>
             </a>
             <form action="/search" onsubmit="return suggestSearch(event);" class="header-search">
                 <input id="skw" type="text" class="input-search" onkeyup="suggestSearch(event);"
                     placeholder="Bạn tìm gì..." name="key" autocomplete="off" maxlength="100">
                 <button type="submit">
-                    <i class="icon-search"></i>
+                    <i class="icon-search">
+                        <img src="/assets/images/fs-iconfire.webp"alt="search-icon">
+                    </i>
 
                 </button>
                 <div id="search-result"></div>
