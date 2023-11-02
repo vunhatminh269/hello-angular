@@ -8,11 +8,11 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./productpage.component.css']
 })
 export class ProductpageComponent implements OnInit {
-  product!: Product;
+  
 
   constructor(private productService: ProductService) {}
-
-  ngOnInit(): void {
+  product!: Product;
+  ngOnInit() {
     this.product = this.productService.getProduct(); // Sử dụng phương thức từ service
   }
 }

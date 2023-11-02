@@ -8,20 +8,26 @@
   
   /* Kiểu chung cho carousel container */
 .carousel {
-    display: block;
-    position: relative;
-    width: 100%;
+    display: flex;
   }
   
-  /* Kiểu cho mỗi item trong carousel */
+  /* Đảm bảo rằng carousel và các slide nằm ngang */
+.home-slider {
+    /*width: 75%; /* Đảm bảo rằng carousel chiếm full chiều rộng của phần tử cha */
+    display: flex; /* Sử dụng Flexbox để xếp các slide theo chiều ngang */
+    /* overflow: hidden; Ẩn phần nội dung tràn ra ngoài carousel */
+  }
+  
   .carousel-item {
-    text-align: center; /* Căn giữa nội dung trong item */
-    padding: 20px; /* Khoảng cách giữa các item */
+    flex: 0 0 auto; /* Đảm bảo rằng kích thước của các slide không thay đổi */
+    margin-right: 10px; /* Khoảng cách giữa các slide */
+    min-width: 100%; /* Đảm bảo rằng mỗi slide chiếm toàn bộ chiều rộng của carousel */
   }
   
   .carousel-item img {
-    max-width: 100%; /* Đảm bảo ảnh không bị tràn khỏi item */
+    max-width: 100%; /* Đảm bảo rằng hình ảnh không vượt quá kích thước của slide */
   }
+  
   
   /* Kiểu cho các điểm chỉ dẫn (dots) */
   .carousel .slick-dots {
