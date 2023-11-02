@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { HomeComponent } from './home.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 @NgModule({
-  declarations: [HomeComponent],
-  imports: [CommonModule],
-  exports: [HomeComponent],
+  declarations: [],
+  imports: [CommonModule,SlickCarouselModule],
+  exports: [],
 })
 export class HomeModule { }
