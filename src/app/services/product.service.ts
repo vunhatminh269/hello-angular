@@ -12,7 +12,7 @@ export class ProductService {
       name: 'Sản phẩm 1',
       description: 'Mô tả sản phẩm 1',
       price: 100,
-      imageUrl: 'link_anh_1.jpg',
+      imageUrl: '/assets/images/product1.jpg',
       discountedPrice: 80,
       image: null
     },
@@ -62,8 +62,8 @@ export class ProductService {
   getNewProducts(): import("../models/product.model").Product[] {
     throw new Error('Method not implemented.');
   }
-  getProduct(): import("../models/product.model").Product {
-    throw new Error('Method not implemented.');
+  getProduct(productId: number): Product | undefined {
+    return this.products.find(product => product.id === productId);
   }
 
   constructor() {

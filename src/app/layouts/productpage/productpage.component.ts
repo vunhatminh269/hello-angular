@@ -12,7 +12,8 @@ export class ProductpageComponent implements OnInit {
 
   constructor(private productService: ProductService) {}
   product!: Product;
-  ngOnInit() {
-    this.product = this.productService.getProduct(); // Sử dụng phương thức từ service
+  ngOnInit() { 
+    const productId = 1;
+    this.product = this.productService.getProduct(productId)!; // Sử dụng phương thức từ service
   }
 }
