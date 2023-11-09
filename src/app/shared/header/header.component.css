@@ -1,8 +1,10 @@
 /* CSS cho phần header chung */
-.header a {
+ a {
   font: 14px/18px Arial,Helvetica,sans-serif;
   color: #333;
   outline: none;
+  text-decoration: none;
+  transition: .2s;
 }
 .media {
     text-align: center; /* Canh giữa nội dung */
@@ -79,20 +81,22 @@
 
 .header__cart .box-cart {
   position: relative;
-  
+  display: inline-block;
+  vertical-align: middle;
 }
 .header_cart {
   border-radius: 4px;
   color: #333;
   font: 16px sans-serif;
-  line-height: 16px;
   padding: 8px 10px;
-  width: 13%;
+  width: 10%;
   background: rgba(255,172,10,.6);
   outline: none;
-  margin-right: 50px;
+  margin-right: 100px;
   margin-top: 15px;
   font-weight: bold;
+  text-decoration: none;  
+  transition: .2s;
   }
   
   .box-cart {
