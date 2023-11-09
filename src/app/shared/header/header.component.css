@@ -1,69 +1,137 @@
-/* Định dạng cho phần header_top */
+/* CSS cho phần header chung */
+.media {
+    text-align: center; /* Canh giữa nội dung */
+    width: 100%;
+  }
+  
+  .media img {
+    width: 100%; /* Để hình ảnh không vượt quá kích thước của phần tử cha */
+    height: auto; /* Để tỷ lệ khung hình không bị thay đổi */
+    display: block;/* Canh giữa hình ảnh ngang theo chiều ngang */
+  }
 .header_top {
-    background-color: #333; /* Màu nền */
-    color: #fff; /* Màu văn bản */
-    padding: 10px 0; /* Khoảng cách nội dung và mép */
-    display: flex; /* Hiển thị các phần tử con theo chiều ngang */
-    justify-content: space-between; /* Các phần tử con được căn giữa và căn cách nhau */
-    align-items: center; /* Căn chỉnh các phần tử con theo trục dọc */
-}
-
-.header-logo {
-    text-decoration: none; /* Loại bỏ gạch chân trên liên kết */
-    color: #fff; /* Màu văn bản */
-}
-
-/* Định dạng cho phần header_search */
-.header-search {
-    display: flex; /* Hiển thị các phần tử con theo chiều ngang */
-}
-
-.input-search {
-    padding: 5px;
-    border: 1px solid #ccc;
+    background-color:rgb(251, 255, 0);
+    padding: 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* CSS cho phần logo */
+  .header-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .header-logo img {
+    width: 345px; /* Điều chỉnh kích thước logo dựa trên kích thước thật của bạn */
+    height: auto;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  
+  /* CSS cho phần tìm kiếm */
+  
+  .header-search {
+    display: flex;
+    background-color: #fff;
     border-radius: 5px;
-}
+    padding: 8px 8px 8px 13px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-size: 300px 200px;
+  }
+  .header-search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; /* Xóa khoảng cách giữa nội dung của button và các đường viền */
+    outline: none; /* Loại bỏ đường viền khi button được focus */
+  }
+  .input-search {
+    border: none;
+    padding: 0;
+    width: 150px;
+  }
+  
+  .icon-search img {
+    width: 20px; /* Điều chỉnh kích thước biểu tượng tìm kiếm */
+    height: 20px;
+    border: none;
+    background: transparent;
+    margin: 0; /* Đặt margin thành 0 */
+    padding: 0; /* Đặt padding thành 0 */
+    outline: none;
+      
+  }
+  
 
-/* Định dạng cho phần header_cart */
+/* CSS cho phần giỏ hàng */
 .header_cart {
-    text-decoration: none; /* Loại bỏ gạch chân trên liên kết */
-    color: #fff; /* Màu văn bản */
-    display: flex; /* Hiển thị các phần tử con theo chiều ngang */
-    align-items: center; /* Căn chỉnh các phần tử con theo trục dọc */
-    margin-left: 10px; /* Khoảng cách giữa header_search và header_cart */
-}
+    text-decoration: none;
+    color: rgb(24, 23, 21);
+    display: flex;
+    align-items: center;
+    margin-right: 180px;
+    margin-top: 20px;
+    background-color: chartreuse;
+    padding: 10px; /* Tùy chỉnh khoảng cách xung quanh nút */
+    border-radius: 5px; /* Bo tròn góc */
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .box-cart {
+    display: flex;
+    align-items: center;
+    border: 5px;
+  }
+  
+  .logo-cart img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+  }
+  
 
-.box-cart {
-    display: flex; /* Hiển thị các phần tử con theo chiều ngang */
-    align-items: center; /* Căn chỉnh các phần tử con theo trục dọc */
-    margin-right: 5px; /* Khoảng cách giữa biểu tượng giỏ hàng và số lượng */
-}
-
-.icon-global-cart {
-    font-size: 20px; /* Kích thước biểu tượng giỏ hàng */
-    margin-right: 5px; /* Khoảng cách giữa biểu tượng giỏ hàng và số lượng */
-}
-
-.cart-number {
-    background-color: #ff0000; /* Màu nền của số lượng trong giỏ hàng */
-    color: #fff; /* Màu văn bản của số lượng trong giỏ hàng */
-    border-radius: 50%; /* Để làm hình tròn cho số lượng trong giỏ hàng */
-    padding: 5px; /* Khoảng cách bên trong số lượng */
-}
-
-/* Định dạng cho phần main-menu */
-.main-menu {
-    list-style: none; /* Loại bỏ dấu chấm trước mục trong danh sách */
-    display: flex; /* Hiển thị các mục theo chiều ngang */
-    padding: 0; /* Loại bỏ khoảng cách trong danh sách */
-}
-
-.main-menu li {
-    margin-right: 10px; /* Khoảng cách giữa các mục menu */
-}
-
-/* Định dạng cho các mục menu */
-.main-menu a {
-    text-decoration: none; /* Loại bỏ gạch chân trên liên kết */
-    color: #333; /* Màu văn bản */
-}
+  
+  /* CSS cho phần menu chính */
+  .header_main {
+    margin-top: 0;
+    background-color:rgb(251, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .main-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  .main-menu ul li {
+    margin-right: 30px;
+  }
+  
+  .main-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+    font-size: 20px;
+  }
+  
+  .main-menu ul li a.active {
+    color: #ff5733; /* Màu của mục đang active */
+  }
+  
+  .main-menu ul li a:hover {
+    color: #ff5733; /* Màu khi di chuột qua mục */
+  }
+  

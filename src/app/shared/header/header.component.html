@@ -1,9 +1,14 @@
 <header>
+    
     <nav class="nav-bar">
+        <div class="media">
+            <img alt="Big GRQ" src="/assets/images/topbar.webp">
+          </div>
+          
         <div class="header_top">
             <a href="/" class="header-logo">
                 <i class="logo.png">
-                    <img src="/assets/images/fs-iconfire.webp" alt="icon">
+                    <img src="/assets/images/headlogo.webp" alt="icon">
                 </i>
             </a>
             <form action="/search" onsubmit="return suggestSearch(event);" class="header-search">
@@ -11,7 +16,7 @@
                     placeholder="Bạn tìm gì..." name="key" autocomplete="off" maxlength="100">
                 <button type="submit">
                     <i class="icon-search">
-                        <img src="/assets/images/fs-iconfire.webp"alt="search-icon">
+                        <img src="/assets/images/loupe.png"alt="search-icon">
                     </i>
 
                 </button>
@@ -19,72 +24,28 @@
             </form>
             <a href="/cart" class="header_cart menu-info">
                 <div class="box-cart">
-                    <i class="iconglobal-cart"></i>
-                    <span class="cart-number"></span>
+                    <i class="logo-cart">
+                        <img src="/assets/images/shopping-cart.png"alt="cart-icon">
+                    </i>
                 </div>
-                <span>Giỏ Hàng</span>
+                <span class="cart-text">Giỏ Hàng</span>
             </a>
         </div>
         <div class="header_main">
             <ul class="main-menu">
-                <li class>
-                    <a href="/dtdd">
-                        <i>
-                            <img src=" ">
-                        </i>
-                        <span class> Điện Thoại</span>
-                    </a>
-                </li>
-                <li class>
-                    <a href="/laptop">
-                        <i>
-                            <img src=" ">
-                        </i>
-                        <span class> Laptop</span>
-                    </a>
-                </li>
-                <li class>
-                    <a href="/tablet">
-                        <i>
-                            <img src=" ">
-                        </i>
-                        <span class> Tablet</span>
-                    </a>
-                </li>
-                <li class>
-                    <a href="/dongho">
-                        <i>
-                            <img src=" ">
-                        </i>
-                        <span class> Đồng Hồ</span>
-                    </a>
-                </li>
-                <li class>
-                    <a href="/phukien">
-                        <i>
-                            <img src=" ">
-                        </i>
-                        <span class> Phụ Kiện</span>
-                    </a>
-                </li>
-                <li class>
-                    <a href="/maycu">
-                        <i>
-                            <img src=" ">
-                        </i>
-                        <span class>Máy cũ giá rẻ</span>
-                    </a>
-                </li>
-                <li class>
-                    <a href="/pc">
-                        <i>
-                            <img src=" ">
-                        </i>
-                        <span class> PC, Máy in</span>
-                    </a>
-                </li>
-
+                <ul class="nav">
+                    <li class="scroll-to-section"><a href="/" class="active">Home</a></li>
+                    <li class="scroll-to-section"><a href="/dtdd">Điện Thoại</a></li>
+                    <li class="scroll-to-section"><a href="/laptop">Laptop</a></li>
+                    <li class="scroll-to-section"><a href="/tablet">Tablet</a></li>
+                    <li class="scroll-to-section"><a href="/dongho">Đồng Hồ</a></li>
+                    <li class="scroll-to-section"><a href="/phukien">Phụ Kiện</a></li>
+                    <li class="scroll-to-section"><a href="/maycu">Máy cũ giá rẻ</a></li>
+                    <li class="scroll-to-section"><a href="/pc">PC, Máy in</a></li>
+                </ul>
             </ul>
         </div>
     </nav>
 </header>
+
+

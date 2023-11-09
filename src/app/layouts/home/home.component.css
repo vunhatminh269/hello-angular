@@ -15,13 +15,13 @@
 .home-slider {
     /*width: 75%; /* Đảm bảo rằng carousel chiếm full chiều rộng của phần tử cha */
     display: flex; /* Sử dụng Flexbox để xếp các slide theo chiều ngang */
-    /* overflow: hidden; Ẩn phần nội dung tràn ra ngoài carousel */
+    overflow: hidden;/* Ẩn phần nội dung tràn ra ngoài carousel */
   }
   
   .carousel-item {
     flex: 0 0 auto; /* Đảm bảo rằng kích thước của các slide không thay đổi */
     margin-right: 10px; /* Khoảng cách giữa các slide */
-    min-width: 100%; /* Đảm bảo rằng mỗi slide chiếm toàn bộ chiều rộng của carousel */
+    /* min-width: 100%; Đảm bảo rằng mỗi slide chiếm toàn bộ chiều rộng của carousel */
   }
   
   .carousel-item img {

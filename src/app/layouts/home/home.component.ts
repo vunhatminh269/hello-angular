@@ -15,7 +15,7 @@ export class HomeComponent implements AfterViewInit {
     { name: 'Item 4', image: '/assets/images/owlitem4.webp', link: '/products' },
   ];
   slickCarouselConfig = {
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     dots: true,
     infinite: true,
@@ -28,7 +28,7 @@ export class HomeComponent implements AfterViewInit {
   ];
 
   slideConfig = {
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     dots: true,
     infinite: true,
