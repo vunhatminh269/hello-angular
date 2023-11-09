@@ -1,4 +1,9 @@
 /* CSS cho phần header chung */
+.header a {
+  font: 14px/18px Arial,Helvetica,sans-serif;
+  color: #333;
+  outline: none;
+}
 .media {
     text-align: center; /* Canh giữa nội dung */
     width: 100%;
@@ -71,30 +76,33 @@
   
 
 /* CSS cho phần giỏ hàng */
+
+.header__cart .box-cart {
+  position: relative;
+  
+}
 .header_cart {
-    text-decoration: none;
-    color: rgb(24, 23, 21);
-    display: flex;
-    align-items: center;
-    margin-right: 180px;
-    margin-top: 20px;
-    background-color: chartreuse;
-    padding: 10px; /* Tùy chỉnh khoảng cách xung quanh nút */
-    border-radius: 5px; /* Bo tròn góc */
-    font-weight: bold;
-    font-size: 20px;
+  border-radius: 4px;
+  color: #333;
+  font: 16px sans-serif;
+  line-height: 16px;
+  padding: 8px 10px;
+  width: 13%;
+  background: rgba(255,172,10,.6);
+  outline: none;
+  margin-right: 50px;
+  margin-top: 15px;
+  font-weight: bold;
   }
   
   .box-cart {
-    display: flex;
-    align-items: center;
-    border: 5px;
+    margin: 0;
+    padding: 0;
   }
   
   .logo-cart img {
     width: 50px;
-    height: 50px;
-    margin-right: 5px;
+    height: 49px;
   }
   
 
@@ -124,7 +132,8 @@
     text-decoration: none;
     color: #333;
     transition: color 0.3s;
-    font-size: 20px;
+    font:  18px Arial, sans-serif;
+    font-weight: bold;
   }
   
   .main-menu ul li a.active {
